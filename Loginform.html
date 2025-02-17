@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        :root {
+            --color-dark: #161619;
+            --color-light: #d9dade;
+            --accent-cyan: #4c7c7c;
+        }
+
+        body {
+            background-color: var(--color-light);
+            font-family: monospace;
+        }
+
+        .container {
+            background-color: var(--color-dark);
+            width: 70%;
+            height: 400px;
+            margin-top: 50px;
+            border-radius: 5px;
+            box-shadow: 10px 10px 14px var(--color-dark);
+        }
+
+        h1 {
+            color: var(--accent-cyan);
+            padding-top: 15px;
+            text-shadow: 3px 3px 8px var(--accent-cyan);
+        }
+
+        hr {
+            background: linear-gradient(to right, #161619, #00ffff, #161619);
+            height: 3px;
+            border-style: none;
+            box-shadow: 1px 2px 5px var(--accent-cyan);
+        }
+
+        .text {
+            font-size: 20px;
+            color: var(--color-dark);
+            background-color: var(--accent-white);
+            width: 180px;
+            height: 25px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .box {
+            width: 250px;
+            height: 30px;
+            background-color: var(--color-dark);
+            border-style: inset;
+            border-width: 3px;
+            border-radius: 3px;
+            border-color: var(--accent-cyan);
+            color: var(--color-light);
+            font-family: monospace;
+            box-shadow: 5px 5px 10px var(--accent-cyan);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn {
+            margin-top: 15px;
+            background-color: var(--accent-cyan);
+            width: 70px;
+            height: 30px;
+            font-family: monospace;
+            color: var(--color-dark);
+            border-style: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        h1:hover {
+            color: var(--color-dark);
+            text-shadow: -2px -2px 8px var(--accent-lawngreen);
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            box-shadow: 2px 2px 8px var(--accent-lawngreen);
+            transition: 0.3s;
+            border-color: var(--accent-lawngreen);
+            border-width: 3px;
+        }
+
+        .btn:hover {
+            background-color: #161619;
+            box-shadow: 0px 0px 8px var(--accent-lawngreen);
+            color: var(--accent-lawngreen);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <h1>Login Page</h1>
+            <br>
+            <marquee direction="right" scrollamount="20">
+            <hr style="width: 1300px;">
+            </marquee>
+            <br><br>
+            <form>
+                <div class="text">
+                    E-Mail </div> 
+                    <br>
+                <input type="text" placeholder="example100@gmail.com" class="box">
+                <br><br><br>
+                <div class="text">
+                    Password  </div>
+                    <br>
+                <input type="password" placeholder="•••••••" class="box">
+                <br><br>
+                <a href="home.html">
+                    <input type="button" value="Submit" class="btn">
+                </a>
+                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <input type="reset" value="Reset" class="btn">
+            </form>
+        </div>
+    </center>
+</body>
+</html>
