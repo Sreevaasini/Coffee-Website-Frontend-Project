@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Angular JS</title>
+    <script src="scripts/angular.js"></script>
+</head>
+<body>
+    <h2>Angular JS Sample Application</h2>
+    <divng-app="">
+        <table border="0">
+                <tr>
+                    <td><input type="checkbox" ng-model="enableDisableButton">Disable Button</td>
+                    <td><button ng-disabled="enableDisableButton">Click ME!</button></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" ng-model="showHide">Show Button</td>
+                    <td><button ng-show="showHide">Click ME</td></button></td>
+    
+                </tr>
+            <tr>
+            <td><p>Total Click</p></td>
+            <td><button ng-click="click counter=click counter+1">Click Me!</button></td>
+        </tr>
+
+        
+            
+        </table>
+    </div>
+    
+</body>
+</html>
